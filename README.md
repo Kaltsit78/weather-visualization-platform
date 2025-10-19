@@ -24,8 +24,7 @@
 
 ## 截图
 
-(在此处添加 1-2 张应用界面的截图会很有帮助！)
-![应用截图]("C:\Users\sitao\Desktop\20251019161141_348_2.png")
+![应用截图](C:\Users\sitao\Desktop\20251019161141_348_2.png)
 
 ## 运行环境要求
 
@@ -121,8 +120,7 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 ## Screenshot
 
-(Adding 1-2 screenshots of the application interface here would be very helpful!)
-![Application Screenshot]("C:\Users\sitao\Desktop\20251019161141_348_2.png")
+![Application Screenshot](C:\Users\sitao\Desktop\20251019161141_348_2.png)
 
 ## Requirements
 
