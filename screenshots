@@ -1,4 +1,0 @@
-git add images/app_screenshot.png  # 添加新文件
-git add README.md                # 添加修改后的 README
-git commit -m "Add application screenshot and update README"
-git push origin main             # 推送到 GitHub
