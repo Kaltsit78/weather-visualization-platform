@@ -28,22 +28,10 @@
 
 ![应用截图](https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788)
 
-## 运行环境要求
+## 数据要求
 
-* Python 3.8 或更高版本
-* 核心依赖库:
-    * `tkinter` (通常 Python 自带)
-    * `xarray` (及后端如 `netcdf4` 或 `h5netcdf`)
-    * `matplotlib`
-    * `cartopy`
-    * `geopandas`
-    * `regionmask`
-    * `numpy`
-    * `pandas`
-    * `opencc-python-reimplemented` (用于简繁转换和港澳台名称映射)
-* 打包依赖 (如果你想自己打包):
-    * `pyinstaller`
-    * `pyinstaller-hooks-contrib`
+* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自[哥白尼气候变化服务中心 (C3S)](https://cds.climate.copernicus.eu/datasets) 的 ERA5 或 ERA5-Land 数据集。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
+* **地图数据**: 程序运行所需的中国省界 (`*_1.shp`) 和市界 (`*_2.shp`) Shapefile 文件已包含在项目的 `data` 文件夹中。请确保在运行脚本或打包程序时，`data` 文件夹与主程序文件位于同一目录下。
 
 ## 如何使用
 
@@ -56,7 +44,7 @@
 
 ### 方式二：从源代码运行 Python 脚本 (面向开发者)
 
-此方式要求您已按照上方的“环境配置”步骤完成了依赖安装。
+此方式要求您已按照下方的“环境配置”步骤完成了依赖安装。
 
 1.  **克隆仓库并进入目录**:
     ```bash
@@ -72,10 +60,24 @@
     python weather_platform_v[你的版本号].py
     ```
 
-## 数据要求
+## 环境配置与依赖 (面向开发者/从源代码运行)
 
-* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自[哥白尼气候变化服务中心 (C3S)](https://cds.climate.copernicus.eu/datasets) 的 ERA5 或 ERA5-Land 数据集。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
-* **地图数据**: 程序运行所需的中国省界 (`*_1.shp`) 和市界 (`*_2.shp`) Shapefile 文件已包含在项目的 `data` 文件夹中。请确保在运行脚本或打包程序时，`data` 文件夹与主程序文件位于同一目录下。
+推荐使用 Conda 创建独立的虚拟环境：
+
+1.  **创建并激活环境** (以 Python 3.9 为例):
+    ```bash
+    conda create -n weather_map python=3.9
+    conda activate weather_map
+    ```
+2.  **安装主要依赖** (使用 conda-forge 频道):
+    ```bash
+    conda install -c conda-forge xarray netcdf4 matplotlib cartopy geopandas regionmask numpy pandas pyinstaller pyinstaller-hooks-contrib
+    ```
+    *(注意: 安装 `cartopy` 和 `geopandas` 可能需要一些时间...)*
+3.  **安装 OpenCC**:
+    ```bash
+    pip install opencc-python-reimplemented
+    ```
 
 ## 反馈与联系
 
@@ -125,26 +127,14 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 ![Application Screenshot](https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788)
 
-## Requirements
+## Data Requirements
 
-* Python 3.8 or higher
-* Core Dependencies:
-    * `tkinter` (usually included with Python)
-    * `xarray` (with backend like `netcdf4` or `h5netcdf`)
-    * `matplotlib`
-    * `cartopy`
-    * `geopandas`
-    * `regionmask`
-    * `numpy`
-    * `pandas`
-    * `opencc-python-reimplemented` (for T<->S conversion and HK/Macao name mapping)
-* Packaging Dependencies (if building yourself):
-    * `pyinstaller`
-    * `pyinstaller-hooks-contrib`
+* **Meteorological Data**: Requires NetCDF (`.nc`) files. Datasets from the [Copernicus Climate Change Service (C3S)](https://cds.climate.copernicus.eu/datasets), such as ERA5 or ERA5-Land, are recommended. The data should include at least the dimensions `time`, `latitude`, and `longitude` (or recognizable variants like `valid_time`).
+* **Map Data**: The necessary Shapefile files for China's provincial (`*_1.shp`) and city (`*_2.shp`) boundaries are included in the project's `data` folder. Ensure this `data` folder is present in the same directory as the main script or the packaged executable when running the application.
 
-# Installation
+## Installation
 
-## Environment Setup and Dependencies (For Developers/Running from Source)
+### Environment Setup and Dependencies (For Developers/Running from Source)
 
 Using Conda to create an isolated environment is recommended:
 
@@ -189,11 +179,6 @@ This method requires you to have completed the "Environment Setup" steps above.
     ```bash
     python weather_platform_v[Your Version].py
     ```
-
-## Data Requirements
-
-* **Meteorological Data**: Requires NetCDF (`.nc`) files. Datasets from the [Copernicus Climate Change Service (C3S)](https://cds.climate.copernicus.eu/datasets), such as ERA5 or ERA5-Land, are recommended. The data should include at least the dimensions `time`, `latitude`, and `longitude` (or recognizable variants like `valid_time`）。
-* **Map Data**: The necessary Shapefile files for China's provincial (`*_1.shp`) and city (`*_2.shp`) boundaries are included in the project's `data` folder. Ensure this `data` folder is present in the same directory as the main script or the packaged executable when running the application.
 
 ## Feedback and Contact
 
