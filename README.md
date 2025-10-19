@@ -26,7 +26,7 @@
 
 ## 截图
 
-<img width="1744" height="1469" alt="Image" src="https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788" />
+![应用截图](https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788)
 
 ## 运行环境要求
 
@@ -60,8 +60,8 @@
 
 1.  **克隆仓库并进入目录**:
     ```bash
-    git clone [https://github.com/Kaltsit78/weather-visualization-platform]
-    cd [git clone https://github.com/Kaltsit78/weather-visualization-platform.git]
+    git clone [https://github.com/Kaltsit78/weather-visualization-platform.git](https://github.com/Kaltsit78/weather-visualization-platform.git)
+    cd weather-visualization-platform
     ```
 2.  **激活环境**:
     ```bash
@@ -74,7 +74,7 @@
 
 ## 数据要求
 
-* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自[哥白尼气候变化服务中心 (C3S)](https://cds.climate.copernicus.eu/datasets)。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
+* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自[哥白尼气候变化服务中心 (C3S)](https://cds.climate.copernicus.eu/datasets) 的 ERA5 或 ERA5-Land 数据集。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
 * **地图数据**: 程序运行所需的中国省界 (`*_1.shp`) 和市界 (`*_2.shp`) Shapefile 文件已包含在项目的 `data` 文件夹中。请确保在运行脚本或打包程序时，`data` 文件夹与主程序文件位于同一目录下。
 
 ## 反馈与联系
@@ -123,7 +123,7 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 ## Screenshot
 
-<img width="1744" height="1469" alt="Image" src="https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788" />
+![Application Screenshot](https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788)
 
 ## Requirements
 
@@ -178,8 +178,8 @@ This method requires you to have completed the "Environment Setup" steps above.
 
 1.  **Clone the repository and enter the directory**:
     ```bash
-    git clone [https://github.com/Kaltsit78/weather-visualization-platform]
-    cd [git clone https://github.com/Kaltsit78/weather-visualization-platform.git]
+    git clone [https://github.com/Kaltsit78/weather-visualization-platform.git](https://github.com/Kaltsit78/weather-visualization-platform.git)
+    cd weather-visualization-platform
     ```
 2.  **Activate the environment**:
     ```bash
@@ -192,7 +192,7 @@ This method requires you to have completed the "Environment Setup" steps above.
 
 ## Data Requirements
 
-* **Meteorological Data**: Requires NetCDF (`.nc`) files. Datasets from the [Copernicus Climate Change Service (C3S)](https://cds.climate.copernicus.eu/datasets), such as ERA5 or ERA5-Land, are recommended. The data should include at least the dimensions `time`, `latitude`, and `longitude` (or recognizable variants like `valid_time`).
+* **Meteorological Data**: Requires NetCDF (`.nc`) files. Datasets from the [Copernicus Climate Change Service (C3S)](https://cds.climate.copernicus.eu/datasets), such as ERA5 or ERA5-Land, are recommended. The data should include at least the dimensions `time`, `latitude`, and `longitude` (or recognizable variants like `valid_time`）。
 * **Map Data**: The necessary Shapefile files for China's provincial (`*_1.shp`) and city (`*_2.shp`) boundaries are included in the project's `data` folder. Ensure this `data` folder is present in the same directory as the main script or the packaged executable when running the application.
 
 ## Feedback and Contact
@@ -208,4 +208,4 @@ Your feedback is invaluable for improving this project. Thank you for your under
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+本项目采用 MIT 许可证授权。详情请见 `LICENSE` 文件。
