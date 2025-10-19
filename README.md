@@ -68,7 +68,7 @@
 
 ### 使用打包好的版本
 
-1.  前往本仓库的 **[Releases 页面](https://github.com/Kaltsit78/weather-visualization-platform)** 下载最新打包好的版本（通常是一个 `.zip` 文件，例如 `WeatherViz_vX.X.X_windows.zip`）。
+1.  前往本仓库的 **[Releases 页面](https://github.com/Kaltsit78/weather-visualization-platform/releases)** 下载最新打包好的版本（通常是一个 `.zip` 文件，例如 `WeatherViz_vX.X.X_windows.zip`）。
 2.  解压缩下载的 `.zip` 文件到一个你喜欢的目录。
 3.  进入解压后的文件夹 (例如 `气象可视化平台_by_Kaltsit`)。
 4.  双击运行其中的可执行文件 (例如 `气象可视化平台_by_Kaltsit.exe`)。
@@ -166,7 +166,7 @@ Using Conda to create an isolated environment is recommended:
 
 ### Use the packaged version
 
-1.  Go to the **[Releases Page](https://github.com/Kaltsit78/weather-visualization-platform)** of this repository and download the latest packaged version (usually a `.zip` file, e.g., `WeatherViz_vX.X.X_windows.zip`).
+1.  Go to the **[Releases Page](https://github.com/Kaltsit78/weather-visualization-platform/releases)** of this repository and download the latest packaged version (usually a `.zip` file, e.g., `WeatherViz_vX.X.X_windows.zip`).
 2.  Extract the downloaded `.zip` file to a location of your choice.
 3.  Navigate into the extracted folder (e.g., `气象可视化平台_by_Kaltsit`).
 4.  Double-click the executable file (e.g., `气象可视化平台_by_Kaltsit.exe`) to run the application.
