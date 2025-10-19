@@ -4,6 +4,8 @@
 
 **重要提示**: 作者是一名 Python 初学者，该软件主要在 Gemini AI 的协助下编写完成。代码中可能存在不少错漏之处或不够完善的地方，敬请使用者多多包涵！
 
+**语言支持**: 目前该软件界面和地图数据仅支持**简体中文**
+
 ---
 
 ## 主要功能
@@ -100,6 +102,7 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 **Important Note**: The author is a Python beginner, and this software was primarily developed with the assistance of the Gemini AI. There may be errors, omissions, or imperfections in the code. Your understanding is greatly appreciated!
 
+**Language Support**: Currently, the software interface and map data only support **Simplified Chinese**.
 ---
 
 ## Features
