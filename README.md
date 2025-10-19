@@ -24,7 +24,7 @@
 
 ## 截图
 
-![应用截图](images/app_screenshot.png)
+<img width="1744" height="1469" alt="Image" src="https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788" />
 
 ## 运行环境要求
 
@@ -120,7 +120,7 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 ## Screenshot
 
-![Application Screenshot](images/app_screenshot.png)
+<img width="1744" height="1469" alt="Image" src="https://github.com/user-attachments/assets/4244b25c-2897-441a-af68-58a893c9c788" />
 
 ## Requirements
 
