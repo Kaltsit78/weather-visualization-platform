@@ -45,33 +45,32 @@
     * `pyinstaller`
     * `pyinstaller-hooks-contrib`
 
-## 安装
-
-推荐使用 Conda 创建独立的虚拟环境：
-
-1.  **创建并激活环境** (以 Python 3.9 为例):
-    ```bash
-    conda create -n weather_map python=3.9
-    conda activate weather_map
-    ```
-2.  **安装主要依赖** (使用 conda-forge 频道):
-    ```bash
-    conda install -c conda-forge xarray netcdf4 matplotlib cartopy geopandas regionmask numpy pandas pyinstaller pyinstaller-hooks-contrib
-    ```
-    *(注意: 安装 `cartopy` 和 `geopandas` 可能需要一些时间，因为它们依赖较多底层库)*
-3.  **安装 OpenCC**:
-    ```bash
-    pip install opencc-python-reimplemented
-    ```
-
 ## 如何使用
 
-### 使用打包好的版本
+### 方式一：使用打包好的版本 (推荐给大多数用户)
 
 1.  前往本仓库的 **[Releases 页面](https://github.com/Kaltsit78/weather-visualization-platform/releases)** 下载最新打包好的版本（通常是一个 `.zip` 文件，例如 `WeatherViz_vX.X.X_windows.zip`）。
 2.  解压缩下载的 `.zip` 文件到一个你喜欢的目录。
 3.  进入解压后的文件夹 (例如 `气象可视化平台_by_Kaltsit`)。
 4.  双击运行其中的可执行文件 (例如 `气象可视化平台_by_Kaltsit.exe`)。
+
+### 方式二：从源代码运行 Python 脚本 (面向开发者)
+
+此方式要求您已按照上方的“环境配置”步骤完成了依赖安装。
+
+1.  **克隆仓库并进入目录**:
+    ```bash
+    git clone [https://github.com/Kaltsit78/weather-visualization-platform]
+    cd [git clone https://github.com/Kaltsit78/weather-visualization-platform.git]
+    ```
+2.  **激活环境**:
+    ```bash
+    conda activate weather_map
+    ```
+3.  **运行主脚本**:
+    ```bash
+    python weather_platform_v[你的版本号].py
+    ```
 
 ## 数据要求
 
@@ -145,6 +144,8 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 ## Installation
 
+## Environment Setup and Dependencies (For Developers/Running from Source)
+
 Using Conda to create an isolated environment is recommended:
 
 1.  **Create and activate environment** (e.g., with Python 3.9):
@@ -164,12 +165,30 @@ Using Conda to create an isolated environment is recommended:
 
 ## Usage
 
-### Use the packaged version
+### Option 1: Using the Packaged Version (Recommended for most users)
 
 1.  Go to the **[Releases Page](https://github.com/Kaltsit78/weather-visualization-platform/releases)** of this repository and download the latest packaged version (usually a `.zip` file, e.g., `WeatherViz_vX.X.X_windows.zip`).
 2.  Extract the downloaded `.zip` file to a location of your choice.
 3.  Navigate into the extracted folder (e.g., `气象可视化平台_by_Kaltsit`).
 4.  Double-click the executable file (e.g., `气象可视化平台_by_Kaltsit.exe`) to run the application.
+
+### Option 2: Running the Python Script from Source (For Developers)
+
+This method requires you to have completed the "Environment Setup" steps above.
+
+1.  **Clone the repository and enter the directory**:
+    ```bash
+    git clone [https://github.com/Kaltsit78/weather-visualization-platform]
+    cd [git clone https://github.com/Kaltsit78/weather-visualization-platform.git]
+    ```
+2.  **Activate the environment**:
+    ```bash
+    conda activate weather_map
+    ```
+3.  **Run the main script**:
+    ```bash
+    python weather_platform_v[Your Version].py
+    ```
 
 ## Data Requirements
 
