@@ -73,7 +73,7 @@
 
 ## 数据要求
 
-* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自哥白尼气候变化服务中心 (C3S) 的 ERA5 或 ERA5-Land 数据集（https://cds.climate.copernicus.eu/datasets）。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
+* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自[哥白尼气候变化服务中心 (C3S)](https://cds.climate.copernicus.eu/datasets)。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
 * **地图数据**: 程序运行所需的中国省界 (`*_1.shp`) 和市界 (`*_2.shp`) Shapefile 文件已包含在项目的 `data` 文件夹中。请确保在运行脚本或打包程序时，`data` 文件夹与主程序文件位于同一目录下。
 
 ## 反馈与联系
@@ -169,7 +169,7 @@ Using Conda to create an isolated environment is recommended:
 
 ## Data Requirements
 
-* **Meteorological Data**: Requires NetCDF (`.nc`) files. Datasets from the Copernicus Climate Change Service (C3S), such as ERA5 or ERA5-Land, are recommended(https://cds.climate.copernicus.eu/datasets). The data should include at least the dimensions `time`, `latitude`, and `longitude` (or recognizable variants like `valid_time`).
+* **Meteorological Data**: Requires NetCDF (`.nc`) files. Datasets from the [Copernicus Climate Change Service (C3S)](https://cds.climate.copernicus.eu/datasets), such as ERA5 or ERA5-Land, are recommended. The data should include at least the dimensions `time`, `latitude`, and `longitude` (or recognizable variants like `valid_time`).
 * **Map Data**: The necessary Shapefile files for China's provincial (`*_1.shp`) and city (`*_2.shp`) boundaries are included in the project's `data` folder. Ensure this `data` folder is present in the same directory as the main script or the packaged executable when running the application.
 
 ## Feedback and Contact
