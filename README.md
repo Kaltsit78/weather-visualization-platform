@@ -102,7 +102,7 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 **Important Note**: The author is a Python beginner, and this software was primarily developed with the assistance of the Gemini AI. There may be errors, omissions, or imperfections in the code. Your understanding is greatly appreciated!
 
-Language Support: Currently, the software interface and map data only support Simplified Chinese.
+**Localization**: Currently, the software interface and map data only support Simplified Chinese.
 
 ---
 
