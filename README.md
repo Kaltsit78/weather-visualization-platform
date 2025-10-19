@@ -144,7 +144,7 @@ This is a Python and Tkinter based desktop application for visualizing meteorolo
 
 ## Installation
 
-## Environment Setup and Dependencies (For Developers/Running from Source)
+# Environment Setup and Dependencies (For Developers/Running from Source)
 
 Using Conda to create an isolated environment is recommended:
 
