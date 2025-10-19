@@ -73,7 +73,7 @@
 
 ## 数据要求
 
-* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自哥白尼气候变化服务中心 (C3S) 的 ERA5 或 ERA5-Land 数据集(https://cds.climate.copernicus.eu/datasets)。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
+* **气象数据**: 需要 NetCDF (`.nc`) 格式的文件。推荐使用来自哥白尼气候变化服务中心 (C3S) 的 ERA5 或 ERA5-Land 数据集（https://cds.climate.copernicus.eu/datasets）。数据应至少包含 `time`, `latitude`, `longitude` 这三个维度（或程序可识别的变体如 `valid_time`）。
 * **地图数据**: 程序运行所需的中国省界 (`*_1.shp`) 和市界 (`*_2.shp`) Shapefile 文件已包含在项目的 `data` 文件夹中。请确保在运行脚本或打包程序时，`data` 文件夹与主程序文件位于同一目录下。
 
 ## 反馈与联系
